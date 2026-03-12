@@ -1,0 +1,77 @@
+###read all users---> request to a protected route
+GET http://localhost:5000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJvb21AZ21haWwuY29tIiwiaWF0IjoxNzcyODc4MDUxLCJleHAiOjE3NzI4NzgwNjF9.nR4TwSLSmaO6AfqpI6CD5oWQh5AUGs-0KMiT4pWF6-Y; Path=/; HttpOnly; SameSite=Lax
+
+### get a user by id
+GET http://localhost:5000/user-api/users/69aa9a166593f92f5cb4b27a
+
+###for authentication
+POST http://localhost:5000/user-api/users/auth
+Content-Type: application/json
+
+{
+ "email":"boom@gmail.com",
+ "password":"poiuytrewq999"
+}
+
+###
+POST http://localhost:5000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"Jaya",
+    "password":"poiuytrewq999",
+    "email":"bam@gmail.com",
+    "age":19
+}
+
+###
+PUT http://localhost:5000/user-api/users/69aa9cb30650b643faff1517
+Content-Type: application/json
+
+
+{
+    "username":"Dewa",
+    "password":"poiuytrewq999",
+    "email":"boom@gmail.com",
+    "age":18
+}
+
+###
+DELETE http://localhost:5000/user-api/users/69aa689e646c51f0d05e5def
+
+
+
+
+
+#### for products
+GET http://localhost:5000/product-api/product
+####
+GET http://localhost:5000/product-api/product/ByBrand/Apis
+
+###
+POST http://localhost:5000/product-api/product
+Content-Type: application/json
+
+{
+    "productId":1,
+    "productName":"Honey",
+    "price":20000,
+    "brand":"Dabur"
+    
+}
+
+###
+PUT http://localhost:5000/product-api/product/1
+Content-Type: application/json
+
+{
+    "productId":1,
+    "productName":"Honey",
+    "price":25000,
+    "brand":"Apis"
+}
+
+###
+DELETE http://localhost:5000/product-api/product/1
+
