@@ -1,0 +1,13 @@
+table{
+    margin:auto;
+    text-align: center;
+    margin-top: 100px;
+    width: 700px;
+}
+table,thead,tfoot td,.subtitle td{
+    border-collapse: collapse;
+    border: 2px solid #000000;
+}
+.left{
+    border-right: 2px solid black;
+}
