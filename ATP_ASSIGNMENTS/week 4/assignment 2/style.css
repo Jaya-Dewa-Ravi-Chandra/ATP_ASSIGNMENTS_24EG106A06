@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+}
+img{
+    margin: 20px;
+}
+h2{
+    margin:0;
+}

@@ -1,0 +1,62 @@
+GET http://localhost:5000/user-api/users
+### get a user by id
+GET http://localhost:5000/user-api/users/1
+
+###
+POST http://localhost:5000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"Jaya Dewa",
+    "age":19
+}
+
+###
+PUT http://localhost:5000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"Ravi Chandra",
+    "age":19
+}
+
+###
+DELETE http://localhost:5000/user-api/users/1
+
+
+
+
+
+#### for products
+GET http://localhost:5000/product-api/product
+####
+GET http://localhost:5000/product-api/product/ByBrand/Dabur
+
+###
+POST http://localhost:5000/product-api/product
+Content-Type: application/json
+
+{
+    "ProductId":1,
+    "name":"Honey",
+    "Brand":"Dabur",
+    "Price":20000000
+}
+
+###
+PUT http://localhost:5000/product-api/product
+Content-Type: application/json
+
+{
+    "ProductId":1,
+    "name":"Honey",
+    "Brand":"Apis",
+    "Price":3000000
+}
+
+###
+DELETE http://localhost:5000/product-api/product/1
+
+
