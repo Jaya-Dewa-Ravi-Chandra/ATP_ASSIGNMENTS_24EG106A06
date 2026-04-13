@@ -13,7 +13,7 @@ import {
   errorClass,
   timestampClass,
 } from "../styles/common.js";
-
+axios.defaults.withCredentials = true;
 function UserProfile() {
   const logout = useAuth((state) => state.logout);
   const currentUser = useAuth((state) => state.currentUser);
