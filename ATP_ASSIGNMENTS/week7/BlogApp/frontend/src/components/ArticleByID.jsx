@@ -27,7 +27,7 @@ import {
   commentText,
 } from "../styles/common.js";
 import { useForm } from "react-hook-form";
-
+axios.defaults.withCredentials = true;
 function ArticleByID() {
   const { id } = useParams();
   const location = useLocation();
