@@ -12,7 +12,7 @@ const app=exp()
 //body parser middleware
 app.use(exp.json())
 app.use(cookieParser())
-app.use(cors({origin:["http://localhost:5173"], credentials:true}))
+app.use(cors({origin:["https://atp-assignments-24eg106a06.onrender.com"], credentials:true}))
 app.use(cors({origin:["http://localhost:27017/"], credentials:true}))
 //path level middlewares
 app.use("/auth",commonApp)
