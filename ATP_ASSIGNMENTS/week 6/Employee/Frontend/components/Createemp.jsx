@@ -5,7 +5,7 @@ import axios from 'axios'
 import { useState } from 'react'
 import { counterContextObj } from '../contexts/ContextProvider'
 import { useContext } from 'react'
-  
+  axios.defaults.withCredentials=true;
 function Createemp() {
   let [loading,setLoading]=useState(false)
   const {counter,changeCounter}=useContext(counterContextObj)
@@ -15,7 +15,7 @@ function Createemp() {
     console.log(newEmp)
     try{
       setLoading(true)
-      const res=await axios.post("http://localhost:3000/employee/create",newEmp)
+      const res=await axios.post("https://empbackend-hwqf.onrender.com/employee/create",newEmp)
       if(res.status==201)
         Navigate('/listofemp')
     }
