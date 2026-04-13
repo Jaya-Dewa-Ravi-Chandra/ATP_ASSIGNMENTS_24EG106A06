@@ -1,0 +1,11 @@
+###read articles
+GET http://localhost:6000/user-api/articles
+
+###comment wrirting
+PUT http://localhost:4000/user-api/articles
+Content-Type: application/json
+
+{
+    "articleId":"69dcf613a94c2d378246d070",
+    "comment":"hi i'm dewa"
+}

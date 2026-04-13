@@ -1,0 +1,2 @@
+###admin login
+POST http://localhost:6000/admin-api/admin
