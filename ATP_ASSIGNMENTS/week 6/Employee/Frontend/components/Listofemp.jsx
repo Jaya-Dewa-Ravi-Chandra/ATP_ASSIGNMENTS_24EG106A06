@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router'
 import axios from 'axios'
 import { useContext } from 'react'
 import { counterContextObj } from '../contexts/ContextProvider'
+axios.defaults.withCredentials=true;
 function Listofemp() {
   let navigate=useNavigate()
   let [emps,setEmps]=useState([])
@@ -17,7 +18,7 @@ function Listofemp() {
   }
 
   const deleteEmpById=async(id)=>{
-    let res=await axios.delete(`http://localhost:3000/employee/delete/${id}`)
+    let res=await axios.delete(`https://empbackend-hwqf.onrender.com/employee/delete/${id}`)
     if(res.status==200)  
       getEmps();
   }
@@ -25,7 +26,7 @@ function Listofemp() {
      try{
       setLoading(true)
       console.log("in axios get")
-      let res = await axios.get("http://localhost:3000/employee/read");
+      let res = await axios.get("https://empbackend-hwqf.onrender.com/employee/read");
       if (res.status === 200) {
         setEmps(res.data.payload);
       }
