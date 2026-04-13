@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { useLocation } from 'react-router'
 import axios from 'axios'
 import { useNavigate } from 'react-router'
-
+axios.defaults.withCredentials=true;
 function EditEmp() {
  const {register, handleSubmit, formState:{errors},setValue}=useForm()
  const {state}=useLocation()
@@ -17,7 +17,7 @@ function EditEmp() {
     setValue("companyname",state.companyname);
  })
  const saveModifiedEmp=async(modifiedEmp)=>{
-    const res= await axios.put(`http://localhost:3000/employee/edit/${state._id}`,modifiedEmp)
+    const res= await axios.put(`https://empbackend-hwqf.onrender.com/employee/edit/${state._id}`,modifiedEmp)
     if(res.status==200)
         navigate("/listofemp")
  }
