@@ -15,7 +15,7 @@ import {
   articleStatusActive,
   articleStatusDeleted,
 } from "../styles/common";
-
+axios.defaults.withCredentials = true;
 function AuthorArticles() {
   const navigate = useNavigate();
   const user = useAuth((state) => state.currentUser);
