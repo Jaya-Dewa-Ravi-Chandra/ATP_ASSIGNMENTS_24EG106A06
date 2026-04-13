@@ -14,7 +14,7 @@ import {
   errorClass,
   articlePageWrapper,
 } from "../styles/common";
-
+axios.defaults.withCredentials = true;
 function EditArticle() {
   const location = useLocation();
   const navigate = useNavigate();
