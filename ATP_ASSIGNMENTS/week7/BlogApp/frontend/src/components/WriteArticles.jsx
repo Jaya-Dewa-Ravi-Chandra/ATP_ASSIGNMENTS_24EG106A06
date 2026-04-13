@@ -15,7 +15,7 @@ import {
   loadingClass,
 } from "../styles/common";
 import { useAuth } from "../store/authStore";
-
+axios.defaults.withCredentials = true;
 function WriteArticles() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
