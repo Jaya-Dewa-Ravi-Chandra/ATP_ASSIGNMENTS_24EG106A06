@@ -8,7 +8,7 @@ config();
 
 const app = exp();
 app.use(exp.json());
-app.use(cors({origin:"https://empbackend-hwqf.onrender.com",credentials: true}))
+app.use(cors({origin:"https://empfrontend-1wgr.onrender.com",credentials: true}))
 app.use("/employee", emp);
 
 
