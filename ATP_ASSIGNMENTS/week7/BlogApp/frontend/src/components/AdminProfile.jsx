@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useAuth } from "../store/authStore";
 import { useNavigate } from "react-router";
-
+axios.defaults.withCredentials = true;
 function AdminProfile() {
   const [users, setUsers] = useState([]);
 
