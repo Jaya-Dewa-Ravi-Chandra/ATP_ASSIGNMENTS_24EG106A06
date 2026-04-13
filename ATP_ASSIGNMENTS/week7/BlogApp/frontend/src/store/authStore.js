@@ -17,7 +17,7 @@ export const useAuth = create((set) => ({
       });
 
       let res = await axios.post(
-        "http://localhost:4000/auth/login",
+        "https://blogapp-ppg0.onrender.com/auth/login",
         userCred,
         { withCredentials: true }
       );
@@ -48,7 +48,7 @@ export const useAuth = create((set) => ({
       set({ loading: true });
 
       let res = await axios.get(
-        "http://localhost:4000/auth/logout",
+        "https://blogapp-ppg0.onrender.com/auth/logout",
         { withCredentials: true }
       );
 
@@ -78,7 +78,7 @@ export const useAuth = create((set) => ({
       set({ loading: true });
 
       const res = await axios.get(
-        "http://localhost:4000/auth/check-auth",
+        "https://blogapp-ppg0.onrender.com/auth/check-auth",
         { withCredentials: true }
       );
 
