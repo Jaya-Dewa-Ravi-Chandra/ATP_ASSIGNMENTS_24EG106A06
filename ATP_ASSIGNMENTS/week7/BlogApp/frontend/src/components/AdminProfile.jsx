@@ -16,7 +16,7 @@ function AdminProfile() {
   };
 
   const fetchUsers = async () => {
-    let res = await axios.get("http://localhost:4000/admin-api/users", {
+    let res = await axios.get("https://blogapp-ppg0.onrender.com/admin-api/users", {
       withCredentials: true,
     });
     setUsers(res.data.payload);
