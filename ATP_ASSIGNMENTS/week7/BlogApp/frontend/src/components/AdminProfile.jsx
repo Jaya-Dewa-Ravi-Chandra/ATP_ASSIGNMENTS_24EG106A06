@@ -28,7 +28,7 @@ function AdminProfile() {
 
   const toggleStatus = async (user) => {
     await axios.patch(
-      "http://localhost:4000/admin-api/user-status",
+      "https://blogapp-ppg0.onrender.com/admin-api/user-status",
       {
         userId: user._id,
         isUserActive: !user.isUserActive,
