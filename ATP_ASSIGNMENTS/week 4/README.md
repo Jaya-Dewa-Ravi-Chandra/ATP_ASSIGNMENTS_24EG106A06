@@ -40,8 +40,7 @@
 <div class="container">
    
 # Image Embedding
-<img src="lol.jpg" width="200px" height="200px">
-
+"<img src="lol.jpg" width="200px" height="200px">"
 * Displaying local images
 * Setting image dimensions
 
