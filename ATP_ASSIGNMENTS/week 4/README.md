@@ -20,10 +20,13 @@
 
 ## Paragraph Formatting
 <p>Lorem ipsum...</p>
+
 ## Bold Text Formatting
 <b>amet consectetur</b>
+
 ## Hyperlinks
 <a href="google.com">Link to google</a>
+
 ## Unordered Lists
 <ul>
    <li>unordered list1</li>
@@ -32,14 +35,17 @@
 # Assignment 2 – HTML with CSS Integration
 ## External CSS Linking
 <link rel="stylesheet" href="style.css">
+
 ## Container Division
 <div class="container">
+   
 # Image Embedding
 <img src="lol.jpg" width="200px" height="200px">
+
 * Displaying local images
 * Setting image dimensions
 
-#CSS Properties
+# CSS Properties
 display: flex	Arranges elements in a flexible horizontal layout
 margin: 20px	Adds spacing around the image
 margin: 0	Removes default spacing from headings
